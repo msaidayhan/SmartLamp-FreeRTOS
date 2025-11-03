@@ -1,32 +1,32 @@
-# _Sample project_
+#  SmartLamp – FreeRTOS Tabanlı Akıllı Lamba
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+Bu proje, Necmettin Erbakan Üniveristesi Seydişehir Ahmet Cengiz Mühendislik Fakültesi İşletim Sistemleri dersi kapsamında, **FreeRTOS’un görev yönetimi ve senkronizasyon** özelliklerini ESP32 üzerinde uygulamalı olarak göstermek amacıyla geliştirilmiştir.  
+Sistem; **DHT22 nem/sıcaklık sensörü**, **WS2812 LED şeridi** ve **ESP32'nin Wi-Fi tabanlı web arayüzü** üzerinden kullanıcı etkileşimi sağlar.
 
-This is the simplest buildable example. The example is used by command `idf.py create-project`
-that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
+## 🚀 Özellikler
+- **FreeRTOS Task’ları:** Sensör okuma, LED kontrolü ve web sunucusu ayrı görevlerde çalışır.
+- **Queue & Semaphore Kullanımı:** Görevler arası iletişim için veri kuyruğu ve senkronizasyon yapıları.
+- **Web Arayüzü:** Anlık sıcaklık/nem verilerini gösterir, LED rengini manuel veya otomatik modda değiştirir.
+- **Wi-Fi Bağlantısı:** ESP32 Wi-Fi üzerinden tarayıcıya gerçek zamanlı veri gönderir.
 
+## 🧩 Donanım Bileşenleri
+- ESP32 DevKit v1  
+- DHT22 Sensörü  
+- WS2812B LED Şeridi  
+- 5V Güç Kaynağı  
 
+## ⚙️ Yazılım Mimarisi
+- ESP-IDF 5.5  
+- FreeRTOS Kernel  
+- HTTP Web Server  
+- DHT22 Kütüphanesi (`esp-idf-lib/dht`)  
 
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+## 📸 Sistem Diyagramı
+ESP32 – Sensör – LED şeridi bağlantı diyagramı aşağıdaki gibidir:
+*(Rapor versiyonundaki şemayı buraya da koyabilirsin)*
 
-## Example folder contents
+## 👨‍💻 Geliştirici
+**Mustafa Said Dayhan**  
+📘 Öğrenci No: 22370031086  
+📚 Necmettin Erbakan Üniversitesi – Bilgisayar Mühendisliği  
 
-The project **sample_project** contains one source file in C language [main.c](main/main.c). The file is located in folder [main](main).
-
-ESP-IDF projects are built using CMake. The project build configuration is contained in `CMakeLists.txt`
-files that provide set of directives and instructions describing the project's source files and targets
-(executable, library, or both). 
-
-Below is short explanation of remaining files in the project folder.
-
-```
-├── CMakeLists.txt
-├── main
-│   ├── CMakeLists.txt
-│   └── main.c
-└── README.md                  This is the file you are currently reading
-```
-Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
-They are not used or needed when building with CMake and idf.py.
