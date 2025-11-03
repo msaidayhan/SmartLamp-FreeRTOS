@@ -23,7 +23,7 @@ Sistem; **DHT22 nem/sıcaklık sensörü**, **WS2812 LED şeridi** ve **ESP32'ni
 
 ## 📸 Sistem Diyagramı
 ESP32 – Sensör – LED şeridi bağlantı diyagramı aşağıdaki gibidir:
-*(Rapor versiyonundaki şemayı buraya da koyabilirsin)*
+<img width="1536" height="1024" alt="1bccb5e5-4138-4c93-a608-e7a9dbdd44fd" src="https://github.com/user-attachments/assets/dd885a07-b328-4024-9f38-fde24dc58080" />
 
 ## 👨‍💻 Geliştirici
 **Mustafa Said Dayhan**  
