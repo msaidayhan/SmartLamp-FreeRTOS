@@ -2,6 +2,7 @@
 
 Bu proje, Necmettin Erbakan Üniveristesi Seydişehir Ahmet Cengiz Mühendislik Fakültesi İşletim Sistemleri dersi kapsamında, **FreeRTOS’un görev yönetimi ve senkronizasyon** özelliklerini ESP32 üzerinde uygulamalı olarak göstermek amacıyla geliştirilmiştir.  
 Sistem; **DHT22 nem/sıcaklık sensörü**, **WS2812 LED şeridi** ve **ESP32'nin Wi-Fi tabanlı web arayüzü** üzerinden kullanıcı etkileşimi sağlar.
+Lamba Demosunun Linki: https://www.youtube.com/shorts/4StW63YIR_Q
 
 ## 🚀 Özellikler
 - **FreeRTOS Task’ları:** Sensör okuma, LED kontrolü ve web sunucusu ayrı görevlerde çalışır.
